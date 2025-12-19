@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #b3b3b3;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    background-color: #000021;
+    font-family: "Audiowide", sans-serif;
+}
+.removeLine{
+    text-decoration: none
+}
+#main,#secondary{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#secondary{
+    display: none;
+}
+@media (orientation: portrait) {
+    #CVopen{
+        width: 90dvw;
+    }
+}
+@media (orientation: landscape) {
+    #CVopen{
+        height: 90dvh;
+    }
+}
+#CVopen{
+    position: relative;
+}
+.cvbtns{
+    display: flex;
+    position: absolute;
+    margin: 3px;
+    top: 0;
+    left: 0;
+    /* translate: 250% 0; */
+}
+#gB,.dwnld{
+    width: 41px;
+    height: 41px;
+}
+#gB:hover{
+    cursor: pointer;
+}
+#YT,#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.clink{
+    width: 3rem;
+    aspect-ratio: 1;
+    border: #b3b3b3 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b3b3b3;
+    padding: 0.3rem;
+    overflow: hidden;
+    margin: 0.3rem;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+.YTi{
+    width: 5rem;
+    padding: 0.7rem;
+}
+.clink:hover{
+    border-color: #ff8a03;
+}
+#CV{
+    width: 20rem;
+    background-color: #b3b3b3;
+    color: #000021;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 1000px;
+    transition: all 0.3s;
+}
+.startup{
+    width: 20rem;
+    background-color: #b3b3b3;
+    color: #000021;
+    margin-top: 3px;
+    padding: 0.7rem;
+    padding-bottom: 0.3rem;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 0.3s;
+}
+.startup:hover,#CV:hover{
+    cursor:pointer;
+    background-color: #ff8a03;
+}
+.su{
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+}
+#ZainPhoto{
+    height: 200px;
+    width: auto;
+    border-radius: 50px;
+    margin-top: 11px;
+}
