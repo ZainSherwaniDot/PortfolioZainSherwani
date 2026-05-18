@@ -37,39 +37,51 @@ img{
     display: none;
 }
 @media (orientation: portrait) {
-    #CVopen,CVpage1,CVpage2{
+    #CVopen,#CVpage1,#CVpage2{
         width: 90dvw;
+        max-height: 90dvh;
+        object-fit: contain;
     }
 }
 @media (orientation: landscape) {
-    #CVopen,CVpage1,CVpage2{
+    #CVopen,#CVpage1,#CVpage2{
+        object-fit: contain;
         height: 90dvh;
+        width: auto;
     }
 }
-#CVopen{
+/* #CVopen{
     position: relative;
-}
+} */
 .cvbtns{
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
-    /* display: flex; */
-    /* margin: 3px; */
+    right: 0; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 .cvbtn{
-    margin: 0 10px 10px 0;
+    /* margin: 0 10px 10px 0; */
     width: 120px;
     /* padding: 0.5rem; */
-    border: 3px solid var(--color-blue);
-    color: var(--color-blue);
+    border: 3px solid var(--color-white);
+    color: var(--color-white);
     font-weight: 800;
     text-align: center;
     border-radius: 1000px;
     transition: all 0.3s ease-in-out;
     &:hover,&:active{
         cursor:pointer;
-        background-color: var(--color-blue);
-        color: var(--color-white);
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+}
+@media (width < 420px) {
+    .cvbtn{
+        width: 80px;
+        font-size: 0.75rem;
+        border-width: 2px;
     }
 }
 #socials{
