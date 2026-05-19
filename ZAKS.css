@@ -171,8 +171,8 @@ img{
     }
 }
 #ZainPhoto{
-    height: 200px;
+    height: 300px;
     width: auto;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* margin-top: 11px; */
 }
