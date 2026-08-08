@@ -1,2 +1,2 @@
-Temporary website for [ZainSherwani.com](https://ZainSherwani.com).
+Temporary website for [ZainSherwani.com](https://ZainSherwani.com) containing all my social and other links.
 Real website coming soon (if God wills it)!
